@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./stil.css">
+    <title>Dijkstra algoritam</title>
+</head>
+
+<body>
+    <header>
+        <div class="zaglavlje">
+            <p class="naslov">Vizualizacija Dijkstrinog algoritma</p>
+        </div>
+        <div class="meni">
+            <button class="outlinija-btn" id="dodaj-grane" onclick="dodajGrane()"> Dodaj grane </button>
+            <div>
+                <input type="text" inputmode="numeric" id="pocetni-cvor" placeholder="Početni čvor" />
+                <button class="outlinija-btn" onclick="pronadjiNajkracePuteve(this)"> Pokreni algoritam </button>
+            </div>
+        </div>
+    </header>
+    <div class="graf">
+        <p class="klik">Kliknite da kreirate čvorove</p>
+    </div>
+    <div class="rezultat"></div>
+    <script src="./algoritam.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+</body>
+
+</html>
